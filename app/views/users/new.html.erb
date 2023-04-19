@@ -1,0 +1,28 @@
+<section class="new-user">
+
+  <header class="page-header">
+    <h1>Sign Up</h1>
+  </header>
+
+  <div class="panel panel-default">
+
+  <%= form_for :user, url: '/users' do |f| %>
+    <table class="table table-bordered table-layout-fixed">
+      <tbody>
+        <tr>
+          <td>First Name: <%= f.text_field :first_name %></td>
+          <td>Last Name: <%= f.text_field :last_name %></td>
+          <td>Email: <%= f.text_field :email %></td>
+        </tr>
+        <tr>
+          <td>Password: <%= f.password_field :password %></td>
+          <td>Password Confirmation: <%= f.password_field :password_confirmation %></td>
+          <td><%= f.submit "Submit", class: 'btn btn-info ms-4 me-auto' %></td>
+        </tr>
+        </tbody>
+      </table>      
+    <% end %>
+
+  </div>
+
+</section>

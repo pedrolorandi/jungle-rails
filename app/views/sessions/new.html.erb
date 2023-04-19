@@ -1,0 +1,23 @@
+<section class="log-in">
+
+  <header class="page-header">
+    <h1>Log In</h1>
+  </header>
+
+  <div class="panel panel-default">
+
+  <%= form_for :user, url: '/login' do |f| %>
+    <table class="table table-bordered table-layout-fixed">
+      <tbody>
+        <tr>
+          <td>Email: <%= f.text_field :email %></td>
+          <td>Password: <%= f.password_field :password %></td>
+          <td><%= f.submit "Login", class: 'btn btn-info ms-4 me-auto' %></td>
+        </tr>
+        </tbody>
+      </table>      
+    <% end %>
+
+  </div>
+
+</section>
