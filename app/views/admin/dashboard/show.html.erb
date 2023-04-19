@@ -16,7 +16,7 @@
       <tbody>
         <tr>
           <td class="w-50">Total: <%= @products.count %><%= link_to "View products", [:admin, :products], class: 'btn btn-info ms-4 me-auto' %></td>
-          <td class="w-50">Total: <%= @categories.count %></td>
+          <td class="w-50">Total: <%= @categories.count %><%= link_to "View categories", [:admin, :categories], class: 'btn btn-info ms-4 me-auto' %></td>
         </tr>
       </tbody>
     </table>
